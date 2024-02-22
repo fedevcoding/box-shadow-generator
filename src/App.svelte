@@ -1,8 +1,11 @@
-<script>
+<script lang="ts">
  import "./app.css";
- import Header from "./lib/Header.svelte";
+ import Header from "./components/Header.svelte";
+ import type { Shadow } from "./types";
+
+ const shadows: Shadow[] = [];
 </script>
 
 <section>
- <Header />
+ <Header {shadows} />
 </section>

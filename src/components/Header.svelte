@@ -1,5 +1,8 @@
 <script lang="ts">
  import img from "../assets/logo.svg";
+ import type { Shadow } from "../types";
+
+ export let shadows: Shadow[];
 </script>
 
 <header
