@@ -6,6 +6,6 @@
  const shadows: Shadow[] = [];
 </script>
 
-<section>
+<section class="bg-gray-900 text-white h-screen">
  <Header {shadows} />
 </section>
