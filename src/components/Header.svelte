@@ -12,5 +12,5 @@
   <img src={img} alt="log" class="w-10" />
   <h1 class="text-2xl font-semibold">Css box shadow</h1>
  </div>
- <button class="bg-blue-600 py-2 px-6 rounded-md">Get code</button>
+ <button class="d-btn d-btn-primary">Get code</button>
 </header>
