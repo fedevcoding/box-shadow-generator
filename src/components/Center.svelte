@@ -1,7 +1,11 @@
 <script lang="ts">
- import type { BoxProperties } from "../types";
+ import type { BoxProperties, Shadow } from "../types";
+ import { getBoxShadow } from "../utils";
 
  export let boxProperties: BoxProperties;
+ export let shadows: Shadow[];
+
+ $: shadow = getBoxShadow(shadows);
 </script>
 
 <main
@@ -9,7 +13,8 @@
  style={`background-color: ${boxProperties.canvasColor};`}
 >
  <div
-  style={`width: ${boxProperties.width}rem; height: ${boxProperties.height}rem; background-color: ${boxProperties.backgroundColor}; border-radius: ${boxProperties.borderRadius}rem; border: 1px solid ${boxProperties.borderColor};`}
+  id="box"
+  style={`width: ${boxProperties.width}rem; height: ${boxProperties.height}rem; background-color: ${boxProperties.backgroundColor}; border-radius: ${boxProperties.borderRadius}rem; border: 1px solid ${boxProperties.borderColor}; box-shadow: ${shadow};`}
  />
 </main>
 

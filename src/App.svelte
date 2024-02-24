@@ -15,7 +15,7 @@
  <Header {shadows} />
  <div class="flex">
   <LeftSidebar bind:shadows />
-  <Center bind:boxProperties />
+  <Center bind:shadows bind:boxProperties />
   <RightSidebar bind:boxProperties />
  </div>
 </section>
