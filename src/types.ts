@@ -12,7 +12,7 @@ export type BoxProperties = {
  canvasColor: string;
  backgroundColor: string;
  borderColor: string;
- borderRadius: string;
- height: string;
- width: string;
+ borderRadius: number;
+ height: number;
+ width: number;
 };

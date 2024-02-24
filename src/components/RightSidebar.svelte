@@ -10,7 +10,12 @@
   <h1 class="text-xl mb-8">Box properties</h1>
 
   <p>Canvas color</p>
-  <input type="text" class="d-input d-input-bordered w-full max-w-xs" />
+  <input
+   type="text"
+   class="d-input d-input-bordered w-full max-w-xs"
+   value={boxProperties.canvasColor}
+   on:input={(e) => (boxProperties.canvasColor = e.currentTarget.value)}
+  />
 
   <p class="mt-4">Background color</p>
   <input
@@ -20,7 +25,12 @@
    on:input={(e) => (boxProperties.backgroundColor = e.currentTarget.value)}
   />
   <p class="mt-4">Border color</p>
-  <input type="text" class="d-input d-input-bordered w-full max-w-xs" />
+  <input
+   type="text"
+   class="d-input d-input-bordered w-full max-w-xs"
+   value={boxProperties.borderColor}
+   on:input={(e) => (boxProperties.borderColor = e.currentTarget.value)}
+  />
  </div>
 </aside>
 

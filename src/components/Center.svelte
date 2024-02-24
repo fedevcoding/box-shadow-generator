@@ -9,7 +9,7 @@
  style={`background-color: ${boxProperties.canvasColor};`}
 >
  <div
-  style={`width: ${boxProperties.width}; height: ${boxProperties.height}; background-color: ${boxProperties.backgroundColor}; border-radius: ${boxProperties.borderRadius}; border: 1px solid ${boxProperties.borderColor};`}
+  style={`width: ${boxProperties.width}rem; height: ${boxProperties.height}rem; background-color: ${boxProperties.backgroundColor}; border-radius: ${boxProperties.borderRadius}rem; border: 1px solid ${boxProperties.borderColor};`}
  />
 </main>
 

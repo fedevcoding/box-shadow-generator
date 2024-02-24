@@ -4,23 +4,17 @@
  import Header from "./components/Header.svelte";
  import LeftSidebar from "./components/LeftSidebar.svelte";
  import RightSidebar from "./components/RightSidebar.svelte";
+ import { defaultBoxProperties } from "./defaultvalues";
  import type { BoxProperties, Shadow } from "./types";
 
  let shadows: Shadow[] = [];
- let boxProperties: BoxProperties = {
-  canvasColor: "rgb(17 24 39)",
-  borderColor: "transparent",
-  borderRadius: "2rem",
-  backgroundColor: "white",
-  height: "20rem",
-  width: "20rem",
- };
+ let boxProperties: BoxProperties = defaultBoxProperties;
 </script>
 
 <section class="bg-gray-900 text-white h-screen">
  <Header {shadows} />
  <div class="flex">
-  <LeftSidebar {shadows} />
+  <LeftSidebar bind:shadows />
   <Center bind:boxProperties />
   <RightSidebar {shadows} bind:boxProperties />
  </div>
