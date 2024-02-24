@@ -16,6 +16,6 @@
  <div class="flex">
   <LeftSidebar bind:shadows />
   <Center bind:boxProperties />
-  <RightSidebar {shadows} bind:boxProperties />
+  <RightSidebar bind:boxProperties />
  </div>
 </section>
