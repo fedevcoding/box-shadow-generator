@@ -1,7 +1,8 @@
 <script lang="ts">
- import type { Shadow } from "../types";
+ import type { BoxProperties, Shadow } from "../types";
 
  export let shadows: Shadow[];
+ export let boxProperties: BoxProperties;
 </script>
 
 <aside class="w-[20vw] border-l-2 border-l-gray-500">
@@ -12,8 +13,12 @@
   <input type="text" class="d-input d-input-bordered w-full max-w-xs" />
 
   <p class="mt-4">Background color</p>
-  <input type="text" class="d-input d-input-bordered w-full max-w-xs" />
-
+  <input
+   type="text"
+   class="d-input d-input-bordered w-full max-w-xs"
+   value={boxProperties.backgroundColor}
+   on:input={(e) => (boxProperties.backgroundColor = e.currentTarget.value)}
+  />
   <p class="mt-4">Border color</p>
   <input type="text" class="d-input d-input-bordered w-full max-w-xs" />
  </div>

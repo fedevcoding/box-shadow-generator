@@ -1,7 +1,17 @@
 <script lang="ts">
+ import type { BoxProperties } from "../types";
+
+ export let boxProperties: BoxProperties;
 </script>
 
-<main class="w-[60vw]"></main>
+<main
+ class={`w-[60vw] flex justify-center items-center`}
+ style={`background-color: ${boxProperties.canvasColor};`}
+>
+ <div
+  style={`width: ${boxProperties.width}; height: ${boxProperties.height}; background-color: ${boxProperties.backgroundColor}; border-radius: ${boxProperties.borderRadius}; border: 1px solid ${boxProperties.borderColor};`}
+ />
+</main>
 
 <style>
  main {

@@ -7,3 +7,12 @@ export type Shadow = {
  spreadRadius: number;
  color: string;
 };
+
+export type BoxProperties = {
+ canvasColor: string;
+ backgroundColor: string;
+ borderColor: string;
+ borderRadius: string;
+ height: string;
+ width: string;
+};
