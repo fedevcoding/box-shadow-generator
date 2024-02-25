@@ -13,9 +13,9 @@ export const defaultShadow: Shadow = {
  active: true,
  inset: false,
  horizontalOffset: 0,
- verticalOffset: 10,
+ verticalOffset: 0,
  blurRadius: 15,
- spreadRadius: -3,
- color: "rgba(0,0,0,0.1)",
+ spreadRadius: 15,
+ color: "rgba(0,0,0,0.5)",
  collapse: false,
 };

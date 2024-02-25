@@ -4,10 +4,10 @@
  import Header from "./components/Header.svelte";
  import LeftSidebar from "./components/LeftSidebar.svelte";
  import RightSidebar from "./components/RightSidebar.svelte";
- import { defaultBoxProperties } from "./defaultvalues";
+ import { defaultBoxProperties, defaultShadow } from "./defaultvalues";
  import type { BoxProperties, Shadow } from "./types";
 
- let shadows: Shadow[] = [];
+ let shadows: Shadow[] = [defaultShadow];
  let boxProperties: BoxProperties = defaultBoxProperties;
 </script>
 
