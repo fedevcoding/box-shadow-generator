@@ -13,7 +13,7 @@
 
 <section class="bg-gray-900 text-white h-screen">
  <Header {shadows} />
- <div class="flex">
+ <div class="block xl:flex">
   <LeftSidebar bind:shadows />
   <Center {shadows} {boxProperties} />
   <RightSidebar bind:boxProperties />

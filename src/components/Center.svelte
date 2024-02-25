@@ -9,7 +9,7 @@
 </script>
 
 <main
- class={`w-[60vw] flex justify-center items-center`}
+ class={`w-[60vw] xl:[100vw] flex justify-center items-center`}
  style={`background-color: ${boxProperties.canvasColor};`}
 >
  <div

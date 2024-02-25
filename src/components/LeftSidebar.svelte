@@ -9,10 +9,14 @@
   shadows.push({ ...defaultShadow });
   shadows = shadows;
  }
+
+ function removeShadow(idx: number) {
+  shadows = shadows.filter((_, i) => i != idx);
+ }
 </script>
 
 <aside
- class="w-[20vw] border-r-2 border-r-gray-500 px-4 py-6 overflow-y-scroll"
+ class="w-[100vw] xl:w-[20vw] border-r-2 border-r-gray-500 px-4 py-6 overflow-y-scroll"
 >
  <div class="flex items-center justify-center gap-6 pb-6">
   <h1 class="font-bold">Customizs Shadows</h1>
@@ -41,22 +45,31 @@
    </button>
 
    <div class="options-wrapper mb-16" id={shadow.collapse ? "collapse" : ""}>
-    <input
-     type="checkbox"
-     checked={shadow.active}
-     class="d-checkbox d-checkbox-sm"
-     id={`active-${i}`}
-     on:change={() => (shadow.active = !shadow.active)}
-    />
-    <label for={`active-${i}`}>Active</label>
-    <input
-     type="checkbox"
-     checked={shadow.inset}
-     class="d-checkbox d-checkbox-sm"
-     id={`inset-${i}`}
-     on:change={() => (shadow.inset = !shadow.inset)}
-    />
-    <label for={`inset-${i}`}>Inset</label>
+    <div class="flex justify-between">
+     <div class="flex gap-2 items-center">
+      <input
+       type="checkbox"
+       checked={shadow.active}
+       class="d-checkbox d-checkbox-sm"
+       id={`active-${i}`}
+       on:change={() => (shadow.active = !shadow.active)}
+      />
+      <label for={`active-${i}`}>Active</label>
+      <input
+       type="checkbox"
+       checked={shadow.inset}
+       class="d-checkbox d-checkbox-sm"
+       id={`inset-${i}`}
+       on:change={() => (shadow.inset = !shadow.inset)}
+      />
+      <label for={`inset-${i}`}>Inset</label>
+     </div>
+
+     <button
+      class="d-btn d-btn-sm d-btn-error text-white"
+      on:click={() => removeShadow(i)}>Remove</button
+     >
+    </div>
 
     <div class="mt-10">
      <div class="flex items-center justify-between">

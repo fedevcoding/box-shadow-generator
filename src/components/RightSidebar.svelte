@@ -4,7 +4,7 @@
  export let boxProperties: BoxProperties;
 </script>
 
-<aside class="w-[20vw] border-l-2 border-l-gray-500">
+<aside class="w-[100vw] xl:w-[20vw] border-l-2 border-l-gray-500">
  <div class="px-4 py-6">
   <h1 class="text-xl mb-8">Box properties</h1>
 
