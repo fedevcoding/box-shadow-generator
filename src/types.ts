@@ -6,6 +6,7 @@ export type Shadow = {
  blurRadius: number;
  spreadRadius: number;
  color: string;
+ collapse: boolean;
 };
 
 export type BoxProperties = {

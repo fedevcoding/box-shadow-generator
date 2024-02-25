@@ -17,4 +17,5 @@ export const defaultShadow: Shadow = {
  blurRadius: 15,
  spreadRadius: -3,
  color: "rgba(0,0,0,0.1)",
+ collapse: false,
 };
