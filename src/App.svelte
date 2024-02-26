@@ -7,8 +7,8 @@
  import { defaultBoxProperties, defaultShadow } from "./defaultvalues";
  import type { BoxProperties, Shadow } from "./types";
 
- let shadows: Shadow[] = [defaultShadow];
- let boxProperties: BoxProperties = defaultBoxProperties;
+ let shadows: Shadow[] = [{ ...defaultShadow }];
+ let boxProperties: BoxProperties = { ...defaultBoxProperties };
 </script>
 
 <section class="bg-gray-900 text-white h-screen">
