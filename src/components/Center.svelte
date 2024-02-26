@@ -9,7 +9,7 @@
 </script>
 
 <main
- class={`w-[60vw] xl:[100vw] flex justify-center items-center`}
+ class={`w-[100vw] xl:w-[60vw] flex justify-center items-center xl:h-[calc(100vh-5rem)] py-20 xl:py-0`}
  style={`background-color: ${boxProperties.canvasColor};`}
 >
  <div
@@ -17,9 +17,3 @@
   style={`width: ${boxProperties.width}rem; height: ${boxProperties.height}rem; background-color: ${boxProperties.backgroundColor}; border-radius: ${boxProperties.borderRadius}rem; border: 1px solid ${boxProperties.borderColor}; box-shadow: ${shadow};`}
  />
 </main>
-
-<style>
- main {
-  height: calc(100vh - 5rem);
- }
-</style>
