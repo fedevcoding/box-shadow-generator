@@ -16,7 +16,7 @@
 </script>
 
 <aside
- class="w-[100vw] xl:w-[20vw] border-r-2 border-r-gray-500 px-4 py-6 overflow-y-scroll xl:h-[calc(100vh-5rem)]"
+ class="w-[100vw] xl:w-[20vw] xl:border-r-2 xl:border-r-gray-500 xl:px-4 px-16 py-6 xl:overflow-y-scroll xl:h-[calc(100vh-5rem)]"
 >
  <div class="flex items-center justify-center gap-6 pb-6">
   <h1 class="font-bold">Customizs Shadows</h1>

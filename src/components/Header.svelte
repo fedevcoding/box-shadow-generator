@@ -27,7 +27,7 @@
 >
  <div class="flex items-center gap-6">
   <img src={img} alt="log" class="w-10" />
-  <h1 class="text-2xl font-semibold">Css box shadow</h1>
+  <h1 class="text-2xl font-semibold hidden md:block">Css box shadow</h1>
  </div>
 
  <div class="flex items-center gap-8">
@@ -37,20 +37,28 @@
 
   <button class="d-btn d-btn-primary" on:click={handleClick}>Get code</button>
   <dialog id="code-modal" class="d-modal">
-   <div class="d-modal-box w-[30vw] max-w-3xl">
+   <div
+    class="d-modal-box lg:w-[40vw] w-[85vw] max-w-3xl lg:h-auto h-[80vh] lg:max-h-none max-h-[80vh]"
+   >
     <h3 class="font-bold text-lg">Generated styles</h3>
     <p class="py-4">
      This is the CSS needed to generate the box shadows you see in the app.
     </p>
 
-    <div class="mockup-code flex gap-4 items-center">
-     <pre class="bg-gray-950 py-5 px-2 rounded-md overflow-x-scroll"><code
+    <div class="mockup-code flex gap-4 items-center flex-col lg:flex-row">
+     <pre
+      class="bg-gray-950 py-5 px-2 rounded-md overflow-x-scroll w-full"><code
        >box-shadow: {code};</code
       ></pre>
      <button class="d-btn d-btn-secondary" on:click={copy}>{status}</button>
+     <div class="d-modal-action">
+      <form method="dialog">
+       <button class="d-btn d-btn-error lg:hidden">Close</button>
+      </form>
+     </div>
     </div>
 
-    <div class="d-modal-action">
+    <div class="d-modal-action lg:block hidden">
      <form method="dialog">
       <button class="d-btn d-btn-error">Close</button>
      </form>
